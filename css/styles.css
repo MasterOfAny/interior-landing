@@ -1,0 +1,29 @@
+:root {
+    --font-family-base: 'Roboto', sans-serif;
+    --font-family-accent: 'Larken', sans-serif;
+
+    --color-light-gray: #abaeb7;
+    --color-dark: #0B0E17;
+
+    --button-height: 59px;
+
+    --container-width: 1300px;
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.2s
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.65;
+    color:  var(--color-light-gray);
+    background-color: var(--color-dark);
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
