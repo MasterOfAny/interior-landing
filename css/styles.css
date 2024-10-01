@@ -397,6 +397,40 @@ section h2 {
     line-height: 1.5;
 }
 
+.project-tabs {
+    display: flex;
+    column-gap: 35px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.our-projects-container {
+    margin-top: -50px;
+}
+
+.project-tab {
+    color: var(--color-light-gray);
+    line-height: 1.62;
+}
+
+.projects-list {
+    margin-top: 75px;
+    display: grid;
+    column-gap: 19px;
+    row-gap: 19px;
+    grid-template-columns: repeat(auto-fill, minmax(307.5px, 1fr));
+}
+
+.projects-item:nth-child(2),
+.projects-item:nth-child(4) {
+    margin-top: 50px;
+}
+
+.projects-item:nth-child(5),
+.projects-item:nth-child(7) {
+    margin-top: -50px;
+}
+
 @media(min-width: 1301px) {
 
     .specializations-cards .specializations-card:first-child,
@@ -517,7 +551,7 @@ section h2 {
     }
 
     .specializations-block .bg-text {
-        bottom: -100%;
+        bottom: -150%;
         right: -150px;
         font-size: 124px;
         line-height: 0.81;
@@ -560,6 +594,7 @@ section h2 {
 
     .about-us-stat img {
         width: 100%;
+        height: auto;
     }
 
     .stat-percent {
