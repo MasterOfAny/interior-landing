@@ -11,3 +11,16 @@ const toggleBurger = () => {
 if ($burger && $headerNavbar) {
     $burger.addEventListener('click', toggleBurger);
 }
+
+const $tabs = document.querySelectorAll('.project-tab');
+const toggleTab = (tab) => {
+    $tabs.forEach(tab => tab.classList.remove('--active'));
+    tab.classList.add('--active');
+}
+if ($tabs) {
+    $tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            toggleTab(tab);
+        })
+    })
+}
